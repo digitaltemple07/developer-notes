@@ -27,3 +27,38 @@ Today I learned how to:
 I downloaded Git for Windows from the official website.
 
 After installation, I opened Windows PowerShell to verify that Git had been installed correctly.
+![First step Git image](Assets/step-1-installing-git.png)
+
+## Step 2: Understanding SSH
+SSH stands for:
+> Secure Shell
+
+SSH is a secure method of allowing my computer to communicate with GitHub without entering my username and password every time I push code.
+
+Instead of passwords, SSH uses two keys:
+- Public Key
+- Private Key
+  
+## Public Key vs Private Key
+
+An easy way to understand SSH keys is to imagine a mailbox.
+
+### Public Key
+
+The public key is like my mailing address.
+
+Anyone can know it.
+
+I upload it to GitHub.
+
+![Second step Git image](Assets/step-2-installing-git.png)
+
+### Private Key
+
+The private key is like the key that opens my mailbox.
+
+Only I should have it.
+
+It stays on my computer.
+
+I must never upload it or share it with anyone.
