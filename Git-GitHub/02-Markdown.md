@@ -46,3 +46,11 @@ For example:
 **Bold Text**
 
 *Italic Text*
+
+## 🧠 Simple Way I Understand Markdown
+
+Markdown is like giving instructions to text.
+
+For example:
+```markdown
+# Hello
