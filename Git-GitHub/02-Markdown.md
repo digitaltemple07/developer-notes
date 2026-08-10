@@ -46,11 +46,26 @@ For example:
 **Bold Text**
 
 *Italic Text*
-
+```
 ## 🧠 Simple Way I Understand Markdown
 
 Markdown is like giving instructions to text.
 
 For example:
+
 ```markdown
 # Hello
+```
+means:
+
+> Display "Hello" as a large heading.
+
+And:
+```markdown
+**Hello**
+```
+means:
+
+> Display "Hello" in bold.
+
+Markdown allows me to concentrate on writing while still keeping my documentation clean and organized.
