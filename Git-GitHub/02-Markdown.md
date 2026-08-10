@@ -249,7 +249,7 @@ Result:
 
 [Visit GitHub](https://github.com)
 
-13. Images
+# 13. Images
 
 Images use syntax similar to links, but with an exclamation mark `!` at the beginning.,
 
@@ -301,4 +301,38 @@ Therefore:
 ```
 ../Assets/screenshots/example.png
 ```
+Means: 
+```
+Go up from Git-GitHub
+↓
+Enter Assets
+↓
+Enter screenshots
+↓
+Find example.png
+```
+The `..` means:
 
+> Go up one directory.
+
+This is an important concept for understanding relative paths.
+
+# 14. Inline Code
+
+Inline code is useful when mentioning commands, filenames, variables, or short pieces of code inside a sentence.
+
+It uses one backtick.
+
+Example:
+```
+Use the `git status` command to check the repository.
+```
+Result:
+
+Use the `git status` command to check the repository.
+
+Other examples include:
+
+```
+`git add .`
+```
