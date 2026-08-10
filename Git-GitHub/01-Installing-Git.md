@@ -51,7 +51,7 @@ Anyone can know it.
 
 I upload it to GitHub.
 
-![Second step Git image](Assets/screenshots6/step-2-installing-git.png)
+![Second step Git image](Assets/screenshots/step-2-installing-git.png)
 
 ### Private Key
 
