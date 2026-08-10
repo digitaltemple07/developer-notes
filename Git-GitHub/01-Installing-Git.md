@@ -24,7 +24,7 @@ Today I learned how to:
   
 ## Step 1: Installing Git
 
-I downloaded Git for Windows from the official website.
+`I downloaded Git for Windows from the official website.`
 
 After installation, I opened Windows PowerShell to verify that Git had been installed correctly.
 ![First step Git image](../Assets/screenshots/step-1-installing-git.png)
