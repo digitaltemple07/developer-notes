@@ -231,3 +231,74 @@ Example:
   - Node.js
   - MySQL
   ```
+  This is useful for organizing related information.
+
+  # 12. Links
+
+Markdown allows me to create clickable links.
+
+Syntax:
+```
+[Text to display](URL)
+```
+Example:
+```
+[Visit GitHub](https://github.com)
+```
+Result:
+
+[Visit GitHub](https://github.com)
+
+13. Images
+
+Images use syntax similar to links, but with an exclamation mark `!` at the beginning.,
+
+```
+![Image description](image-path)
+```
+Example: 
+
+```
+![Git installation screenshot](../Assets/screenshots/git-installation.png)
+```
+The text inside the square brackets describes the image.
+
+This is called alternative text or alt text.
+
+## 📌 Important Lesson About Image Paths
+
+My project structure currently looks similar to this:
+
+```
+developer-notes/
+│
+├── Assets/
+│   ├── diagrams/
+│   ├── images/
+│   └── screenshots/
+│
+├── Git-GitHub/
+│   ├── README.md
+│   ├── 01-Installing-Git.md
+│   ├── 02-Markdown.md
+│   ├── 03-SSH-Authentication.md
+│   ├── 04-Issues.md
+│   ├── 05-Editing-Files.md
+│   └── 06-Commits.md
+│
+├── HTML/
+├── CSS/
+├── JavaScript/
+├── Linux/
+├── MySQL/
+├── PHP/
+└── README.md
+```
+Because `02-Markdown.md` is inside the `Git-GitHub` folder while `Assets` is outside it, I need to move up one directory before accessing `Assets.`
+
+Therefore:
+
+```
+../Assets/screenshots/example.png
+```
+
