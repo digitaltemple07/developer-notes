@@ -27,7 +27,7 @@ Today I learned how to:
 I downloaded Git for Windows from the official website.
 
 After installation, I opened Windows PowerShell to verify that Git had been installed correctly.
-![First step Git image](Assets/step-1-installing-git.png)
+![First step Git image](Assets/screenshots/step-1-installing-git.png)
 
 ## Step 2: Understanding SSH
 SSH stands for:
@@ -51,7 +51,7 @@ Anyone can know it.
 
 I upload it to GitHub.
 
-![Second step Git image](Assets/step-2-installing-git.png)
+![Second step Git image](Assets/screenshots6/step-2-installing-git.png)
 
 ### Private Key
 
