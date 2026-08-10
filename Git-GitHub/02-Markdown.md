@@ -153,3 +153,81 @@ Italic text can be created using one asterisk.
 ```markdown
 *This text is italic*
 ```
+Result:
+
+This text is italic
+
+# 7. Bold and Italic Together
+
+I can combine bold and italic formatting using three asterisks.
+```markdown
+***Important text***
+```
+Result:
+
+Important text
+
+# 8. Strikethrough
+
+Strikethrough text is created using two tilde symbols.
+
+```markdown
+~~This text has been removed~~
+```
+Result:
+
+~~This text has been removed~~
+
+This can be useful when showing that something is no longer correct or relevant.
+
+# 9. Unordered Lists
+
+Unordered lists can be created using `-,` `*,` or `+.`
+
+I prefer using the hyphen because it keeps my documentation consistent.
+```markdown
+- Git
+- GitHub
+- Markdown
+- HTML
+- CSS
+- JavaScript
+```
+Result:
+
+- Git
+- GitHub
+- Markdown
+- HTML
+- CSS
+- JavaScript
+  
+# 10. Ordered Lists
+
+Numbered lists are useful when steps must be completed in a particular order.
+
+```
+1. Install Git
+2. Create a GitHub account
+3. Configure Git
+4. Create an SSH key
+5. Connect Git to GitHub
+6. Create a repository
+7. Make a commit
+8. Push to GitHub
+```
+# 11. Nested Lists
+
+Lists can also contain other lists.
+
+Example:
+```
+- Frontend
+  - HTML
+  - CSS
+  - JavaScript
+- Backend
+  - PHP
+  - Node.js
+  - MySQL
+  ```
