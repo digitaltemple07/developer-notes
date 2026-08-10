@@ -69,3 +69,37 @@ means:
 > Display "Hello" in bold.
 
 Markdown allows me to concentrate on writing while still keeping my documentation clean and organized.
+
+# 2. Why Developers Use Markdown
+
+Markdown is commonly used by developers because it is:
+
+- Simple to learn
+- Easy to read
+- Easy to write
+- Supported by GitHub
+- Supported by VS Code
+- Useful for project documentation
+- Useful for README files
+- Useful for technical notes
+- Useful for software documentation
+
+One of the most common Markdown files in software development is:
+```markdown
+README.md
+```
+The `.md` extension means that the file is a Markdown document.
+
+# 3. Markdown Headings
+
+Markdown headings are created using the `#` symbol.
+
+The number of `#` symbols determines the heading level.
+```markdown
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+```
