@@ -103,3 +103,53 @@ The number of `#` symbols determines the heading level.
 ##### Heading 5
 ###### Heading 6
 ```
+There are six heading levels.
+
+Important Lesson
+
+I should normally use only one main `#` heading for the title of a document.
+
+Example:
+```markdown
+# Git and GitHub Learning Journal
+```
+Then I can organize the document using:
+```markdown
+## Section
+
+### Subsection
+```
+# 4. Paragraphs
+
+Normal text can be written without any special Markdown symbols.
+
+Example:
+```markdown
+I am learning Git and GitHub as part of my journey toward becoming a full-stack developer.
+```
+To start another paragraph, I should leave an empty line between the paragraphs.
+
+Example:
+```markdown
+This is paragraph one.
+
+This is paragraph two.
+```
+# 5. Bold Text
+
+Bold text is created by placing two asterisks around the text.
+```markdown
+**This text is bold**
+```
+Result:
+
+This text is bold
+
+Bold text is useful when I want to emphasize something important.
+
+# 6. Italic Text
+
+Italic text can be created using one asterisk.
+```markdown
+*This text is italic*
+```
