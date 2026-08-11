@@ -503,3 +503,160 @@ Markdown Source
 Rendered Markdown
 ```
 before committing my changes.
+
+# 23. Markdown Source vs Rendered Markdown
+
+This was an important concept for me to understand.
+
+Markdown source might look like this:
+```
+# My Learning Journal
+
+## What I Learned
+
+I learned how to use **Git** and **GitHub**.
+
+- Git
+- GitHub
+- Markdown
+```
+But GitHub renders it as formatted documentation.
+
+Therefore, there are two things I should think about:
+
+1. The Markdown syntax I write.
+2. How that syntax appears after being rendered.
+
+# 24. Markdown and GitHub
+
+GitHub automatically renders `.md` files.
+
+This makes Markdown particularly useful for documenting repositories.
+
+For example:
+```
+README.md
+```
+is usually displayed automatically when someone opens a GitHub repository.
+
+Therefore, learning Markdown is an important part of learning Git and GitHub.
+
+# 25. Why README.md Is Important
+
+A `README.md` file normally explains a project.
+
+A good README can contain:
+
+- Project name
+- Project description
+- Purpose
+- Installation instructions
+- How to use the project
+- Technologies used
+- Screenshots
+- Project structure
+- Author information
+- Contribution instructions
+- License information
+
+As my development skills grow, I will use Markdown to create professional README files for my projects.
+
+# 26. Common Markdown Mistakes I Learned About
+Mistake 1: Incorrect Image Paths
+
+An image may exist on my computer but fail to appear on GitHub if the Markdown path is incorrect.
+
+For example:
+```
+![Screenshot](Assets/screenshots/git.png)
+```
+would not work from inside `Git-GitHub/02-Markdown.md` if `Assets` exists outside the `Git-GitHub` directory.
+
+Instead:
+```
+![Screenshot](../Assets/screenshots/git.png)
+```
+may be required.
+
+### Mistake 2: Image Exists Locally but Was Not Pushed
+
+An image may display locally but not appear on GitHub if I forgot to:
+```bash
+git add .
+git commit -m "Add screenshot"
+git push
+```
+GitHub can only display files that actually exist inside the remote repository.
+
+### Mistake 3: Incorrect Filename
+
+Markdown paths are sensitive to filenames.
+
+For example:
+```
+Git-Install.png
+```
+and:
+```
+git-install.png
+```
+should not automatically be treated as the same filename.
+
+Keeping filenames consistent helps prevent problems.
+
+### Mistake 4: Spaces in Filenames
+
+Instead of:
+```
+Git Installation Screenshot.png
+```
+I prefer:
+```
+git-installation-screenshot.png
+```
+This makes paths cleaner and easier to manage.
+
+### Mistake 5: Forgetting the Blank Line
+
+Leaving blank lines between sections often makes Markdown easier to read and prevents formatting problems.
+
+# 27. My Markdown Naming Convention
+
+For my documentation, I want to keep filenames simple and predictable.
+
+I prefer:
+```
+01-installing-git.md
+02-markdown.md
+03-ssh-authentication.md
+04-issues.md
+05-editing-files.md
+06-commits.md
+```
+General rules:
+
+- Use meaningful names
+- Avoid unnecessary spaces
+- Use hyphens between words
+- Keep naming consistent
+- Use `.md` for Markdown documents
+  
+# 28. Markdown Cheat Sheet
+
+| What I Want | Markdown |
+|-------------|----------|
+| Heading 1  | `# Heading` |
+| Heading 2 | `## Heading` |
+| Heading 3 | `### Heading` |
+| Bold | `***Bold***` | 
+| Italic | `*test*` |
+| Strikethrough | `~~test~~` |
+| Link | `[name](url)` |
+| Image | `![alt](path)` |
+| Inline Code | `'code'` | 
+| Quote | `> quote` | 
+| Bullet List | `- item` |
+| Numbered List | `1. item` | 
+| Task | `- [ ] task` |
+| Completed task | `- [x] task` |
+| Horizontal Line | `---` | 
