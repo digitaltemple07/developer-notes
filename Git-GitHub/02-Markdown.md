@@ -660,3 +660,22 @@ General rules:
 | Task | `- [ ] task` |
 | Completed task | `- [x] task` |
 | Horizontal Line | `---` | 
+
+# 29. Practice Exercise
+
+To make sure I understood Markdown, I practiced creating:
+
+ - [x] A main heading
+ - [x] Subheadings
+ - [x] Paragraphs
+ - [x] Bold text
+ - [x] Italic text
+ - [x] Lists
+ - [x] Links
+ - [x] Images
+ - [x] Inline code
+ - [x] Code blocks
+ - [x] Tables
+ - [x] Blockquotes
+ - [x] Task lists
+ - [x] Horizontal lines
