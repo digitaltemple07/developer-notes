@@ -396,3 +396,58 @@ Blockquotes can be useful for:
 A horizontal line can help separate major sections.
 
 I can create one using:
+```markdown
+---
+```
+This produces a line across the page.
+
+I use horizontal lines throughout my learning journal to separate lessons and sections.
+
+# 18. Tables
+
+Markdown can also create tables.
+
+Example:
+
+```
+| Tool | Purpose |
+|------|---------|
+| Git | Version control |
+| GitHub | Remote repository hosting |
+| VS Code | Code editor |
+| Markdown | Documentation |
+```
+Result:
+
+| Tool | Purpose |
+|------|---------|
+| Git  | Version control |
+| GitHub | Remote repository hosting |
+| Vs Code | Code editor |
+| Markdown | Documentation | 
+
+Tables are useful when comparing information.
+
+# 19. Task Lists
+
+Markdown can also create checkboxes.
+
+Example:
+
+- [x] Install Git
+- [x] Configure Git
+- [x] Learn Markdown
+- [x] Configure SSH
+- [ ] Learn Git branches
+- [ ] Learn Pull Requests
+- [ ] Contribute to open source
+  
+  A completed task uses:
+  ```
+  - [x]
+  ```
+  An incomplete task uses:
+  ```
+  - [ ]
+  ```
+  This can be useful for tracking my learning progress.
