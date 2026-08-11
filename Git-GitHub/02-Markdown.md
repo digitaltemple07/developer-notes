@@ -336,3 +336,63 @@ Other examples include:
 ```
 `git add .`
 ```
+```
+`git commit -m "message"`
+```
+```
+`README.md`
+```
+```
+`02-Markdown.md`
+```
+# 15. Code Blocks
+
+When displaying multiple lines of code, I should use three backticks.
+
+Example:
+
+```bash
+git status
+git add .
+git commit -m "Learn Markdown"
+git push
+```
+The word after the opening backticks tells Markdown which programming language or syntax is being displayed.
+
+For shell commands, I can use:
+```bash
+git status
+```
+For JavaScript:
+
+```javascript
+console.log("Hello World");
+```
+For HTML:
+```html
+<h1>Hello World</h1>
+```
+# 16. Blockquotes
+
+Blockquotes are created using the `>` symbol.
+
+Example:
+```
+> The best way to learn programming is by building and documenting what I learn.
+```
+Result:
+> The best way to learn programming is by building and documenting what I learn.
+
+Blockquotes can be useful for:
+
+- Important notes
+- Quotes
+- Warnings
+- Explanations
+- Key lessons
+
+# 17. Horizontal Lines
+
+A horizontal line can help separate major sections.
+
+I can create one using:
