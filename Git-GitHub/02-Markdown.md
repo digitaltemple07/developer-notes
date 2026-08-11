@@ -360,10 +360,10 @@ git push
 The word after the opening backticks tells Markdown which programming language or syntax is being displayed.
 
 For shell commands, I can use:
+
 ```bash
 git status
 ```
-For JavaScript:
 
 ```javascript
 console.log("Hello World");
@@ -451,3 +451,55 @@ Example:
   - [ ]
   ```
   This can be useful for tracking my learning progress.
+
+  # 20. Escaping Markdown Characters
+
+Sometimes I may want Markdown symbols to appear as normal characters.
+
+For example, normally:
+```
+# Hello
+```
+creates a heading.
+But if I want the `#` itself to appear, I can use a backslash:
+
+```
+\# Hello
+```
+The backslash tells Markdown:
+> Do not format this character.
+
+# 21. Markdown File Extension
+
+Markdown files normally use:
+```
+.md
+```
+
+Examples:
+```
+README.md
+02-Markdown.md
+CONTRIBUTING.md
+INSTALLATION.md
+CHANGELOG.md
+```
+The `.md` extension tells applications such as GitHub and VS Code that the file contains Markdown.
+
+# 22. Previewing Markdown in VS Code
+
+One useful feature I learned is that VS Code can preview how my Markdown will look before I push it to GitHub.
+
+I can open the Markdown preview using:
+```
+Ctrl + Shift + V
+```
+I can also open the preview beside my Markdown file.
+
+This allows me to compare:
+```
+Markdown Source
+        ↓
+Rendered Markdown
+```
+before committing my changes.
