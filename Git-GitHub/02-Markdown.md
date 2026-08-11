@@ -779,3 +779,26 @@ Instead, I need to understand:
 **Write → Preview → Practice → Document → Repeat**
 
 The more documentation I create, the more naturally Markdown syntax will become part of my development workflow.
+
+# ⏳ Next Topics to Learn
+ - [ ] GitHub Issues
+  - [ ] Editing files
+  - [ ] Git commits
+  - [ ] Git branches
+  - [ ] Pull Requests
+  - [ ] Merge conflicts
+  - [ ] `.gitignore`
+  - [ ] Repository management
+  - [ ] Open-source contribution
+
+### Reflection
+
+Learning Markdown has helped me understand how developers create clean and readable documentation without depending on word-processing software.
+
+I can now see why Markdown is used throughout GitHub and software development.
+
+More importantly, I am not only learning commands or syntax—I am building the habit of documenting what I learn.
+
+This Git and GitHub Learning Journal will allow me to look back at my progress, strengthen my understanding, and eventually create documentation that can also help other beginners.
+
+**Learn → Practice → Document → Build → Teach.**
