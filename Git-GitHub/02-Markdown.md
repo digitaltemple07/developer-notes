@@ -648,7 +648,7 @@ General rules:
 | Heading 1  | `# Heading` |
 | Heading 2 | `## Heading` |
 | Heading 3 | `### Heading` |
-| Bold | `***Bold***` | 
+| Bold | `**Bold**` | 
 | Italic | `*test*` |
 | Strikethrough | `~~test~~` |
 | Link | `[name](url)` |
@@ -665,17 +665,117 @@ General rules:
 
 To make sure I understood Markdown, I practiced creating:
 
- - [x] A main heading
- - [x] Subheadings
- - [x] Paragraphs
- - [x] Bold text
- - [x] Italic text
- - [x] Lists
- - [x] Links
- - [x] Images
- - [x] Inline code
- - [x] Code blocks
- - [x] Tables
- - [x] Blockquotes
- - [x] Task lists
- - [x] Horizontal lines
+ - ☑️ A main heading
+ - ☑️ Subheadings
+ - ☑️ Paragraphs
+ - ☑️ Bold text
+ - ☑️ Italic text
+ - ☑️ Lists
+ - ☑️ Links
+ - ☑️ Images
+ - ☑️ Inline code
+ - ☑️ Code blocks
+ - ☑️ Tables
+ - ☑️ Blockquotes
+ - ☑️ Task lists
+ - ☑️ Horizontal lines
+  
+# 30. What I Learned
+
+After completing this lesson, I now understand that Markdown is more than simply making text look attractive.
+
+It is an important documentation tool used throughout software development.
+
+I learned how to organize technical information using headings, lists, links, images, tables, code blocks, and other Markdown features.
+
+I also learned that understanding file paths is important when adding images to Markdown documentation.
+
+One of my biggest lessons was understanding the difference between a file existing on my computer and a file actually existing inside my GitHub repository.
+
+# 31. How This Connects to My Full-Stack Journey
+
+As I continue learning full-stack development, I will need Markdown for:
+
+- GitHub repositories
+- README files
+- Project documentation
+- API documentation
+- Learning notes
+- Installation instructions
+- Open-source contributions
+- Technical tutorials
+- Portfolio projects
+- Developer communication
+
+Learning Markdown is therefore part of learning how professional developers communicate their work.
+
+# 32. My Git Workflow After Editing This File
+
+After completing my Markdown notes, I can check what changed:
+
+```bash
+git status
+```
+
+Then stage the changes:
+
+```bash
+git add .
+```
+Commit them:
+
+```bash
+git commit -m "Document Markdown basics"
+```
+Then push them to GitHub:
+
+```bash
+git push
+```
+My workflow is:
+
+```
+Edit
+  ↓
+Save
+  ↓
+git status
+  ↓
+git add .
+  ↓
+git commit
+  ↓
+git push
+  ↓
+GitHub
+```
+# 🧪 Challenge for Myself
+
+Before moving to the next lesson, I should be able to create a Markdown document without copying an example that contains:
+
+1. A title
+2. Two or more headings
+3. Bold text
+4. Italic text
+5. An unordered list
+6. An ordered list
+7. A link
+8. An image
+9. Inline code
+10. A code block
+11. A table
+12. A task list
+
+If I can create these without assistance, I understand the basic Markdown syntax.
+
+# 🧠 Key Takeaway
+
+Markdown is a simple language for turning plain text into structured technical documentation.
+
+The most important thing I learned is not to memorize every Markdown symbol immediately.
+
+Instead, I need to understand:
+
+**Write → Preview → Practice → Document → Repeat**
+
+The more documentation I create, the more naturally Markdown syntax will become part of my development workflow.
