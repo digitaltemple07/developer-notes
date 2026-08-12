@@ -163,3 +163,85 @@ My computer keeps:
 ```bash
 Private Key
 ```
+When my computer tries to connect, GitHub checks whether my private key matches the public key stored in my GitHub account.
+
+If they match:
+
+```
+Access Granted ✅
+```
+If they do not match:
+
+```
+Access Denied ❌
+```
+# 6. The Most Important Security Rule
+
+The public key can be shared. The private key must remain private.
+
+I should remember:
+
+```text
+PUBLIC KEY  → Share with GitHub
+PRIVATE KEY → Keep on my computer
+```
+This is one of the most important SSH security concepts.
+
+7. Checking Whether SSH Already Exists
+
+Before generating a new SSH key, I can check the `.ssh` directory.
+
+In PowerShell:
+
+```bash
+ls ~/.ssh
+```
+The `~` symbol represents my home directory.
+
+On Windows, this normally points to something similar to:
+
+```type
+C:\Users\MyUsername
+```
+
+Therefore: 
+
+```bash
+~/.ssh
+```
+may represent: 
+
+```
+C:\Users\MyUsername\.ssh
+```
+
+# 8. Generating an SSH Key
+
+I generated an SSH key using:
+
+```bash
+ssh-keygen -t ed25519 -C "my-email@example.com"
+```
+
+Breaking this command down: 
+
+```bash
+ssh-keygen
+```
+means: 
+
+> Generate an SSH key.
+
+The option:
+
+```bash
+-t ed25519
+```
+specifies the type of cryptographic key.
+
+The option:
+
+```bash
+-C "my-email@example.com"
+```
+adds a comment to help identify the key.
