@@ -245,3 +245,87 @@ The option:
 -C "my-email@example.com"
 ```
 adds a comment to help identify the key.
+
+# 9. What Happened After Running ssh-keygen
+
+After running:
+
+```bash
+ssh-keygen -t ed25519 -C "my-email@example.com"
+```
+I was asked where the key should be saved.
+
+The default location normally looks similar to:
+
+```bash
+C:\Users\MyUsername\.ssh\id_ed25519
+```
+
+Pressing:
+
+```type
+Enter
+```
+accepts the default location.
+
+# 10. SSH Passphrase
+
+SSH may also ask me to create a passphrase.
+
+A passphrase provides an additional layer of protection for the private key.
+
+The idea is:
+
+```type
+Private Key
+    +
+Passphrase
+    =
+More Security
+```
+A passphrase is different from my GitHub password.
+
+It protects the SSH private key stored on my computer.
+
+# 11. Files Created by SSH
+
+After generating the key, two files are created.
+
+Example:
+
+```type
+id_ed25519
+id_ed25519.pub
+```
+Their purpose is:
+
+| File | Purpose |
+|------|---------|
+| `id_ed*55*9` | Private SSH key |
+| `id_ed25519.pub` | Public SSH key | 
+
+The most important difference is:
+
+```bash
+id_ed25519      → SECRET
+id_ed25519.pub  → SHAREABLE
+```
+# 12. Viewing My Public SSH Key
+
+To view my public key in PowerShell, I can use:
+
+```bash
+Get-Content ~/.ssh/id_ed25519.pub
+```
+Another possible command is:
+
+```bash
+cat ~/.ssh/id_ed*55*9.pub
+```
+
+The output normally begins with something similar to:
+
+```bash
+ssh-ed25519
+```
+and ends with the email or comment I used when creating the key.
