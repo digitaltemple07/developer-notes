@@ -39,3 +39,38 @@ In my GitHub workflow, SSH allows my computer to securely communicate with GitHu
 Instead of repeatedly entering a username and password, SSH uses cryptographic keys to verify my identity.
 
 A simple way I understand it is:
+
+
+```text
+My Computer
+     ↓
+SSH Authentication
+     ↓
+GitHub
+``` 
+
+SSH helps GitHub answer the question:
+
+> "Is this really Ken's computer?"
+
+# 2. What Is Authentication?
+
+Authentication means proving who I am.
+
+For example, when logging into a website, I may authenticate using:
+
+- Username
+- Password
+- PIN
+- Fingerprint
+- Face recognition
+- Security key
+
+With GitHub SSH authentication, I authenticate using an SSH key pair.
+
+The key pair consists of:
+
+```
+Private Key + Public Key
+```
+Both keys work together.
