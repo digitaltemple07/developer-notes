@@ -320,7 +320,7 @@ Get-Content ~/.ssh/id_ed25519.pub
 Another possible command is:
 
 ```bash
-cat ~/.ssh/id_ed*55*9.pub
+cat ~/.ssh/id_ed25519.pub
 ```
 
 The output normally begins with something similar to:
@@ -329,3 +329,50 @@ The output normally begins with something similar to:
 ssh-ed25519
 ```
 and ends with the email or comment I used when creating the key.
+
+# 13. Adding the SSH Key to GitHub
+
+Once I copied my public key, I added it to my GitHub account.
+
+The process is approximately:
+
+```bash
+GitHub
+   ↓
+Settings
+   ↓
+SSH and GPG keys
+   ↓
+New SSH key
+   ↓
+Add public key
+```
+I gave the key a meaningful title so that I could identify the computer.
+
+For example:
+
+```type
+HP Laptop
+```
+Then I pasted the contents of:
+
+```bash
+id_ed25519.pub
+```
+into GitHub.
+
+# 14. Why I Should Give SSH Keys Clear Names
+
+A GitHub account may eventually contain several SSH keys.
+
+For example:
+
+```bash
+Personal Laptop
+Work Laptop
+Desktop Computer
+Development Server
+```
+Giving keys descriptive names helps me identify which device each key belongs to.
+
+This becomes more important as I work with more computers and servers.
