@@ -376,3 +376,126 @@ Development Server
 Giving keys descriptive names helps me identify which device each key belongs to.
 
 This becomes more important as I work with more computers and servers.
+
+# 15. Testing My SSH Connection
+
+After adding the public key to GitHub, I tested the connection using:
+
+```bash
+ssh -T git@github.com
+```
+This command asks GitHub:
+
+> Can my computer authenticate using SSH?
+
+The first time I connected, SSH may ask whether I trust GitHub's host.
+
+A message may appear asking me to confirm the connection.
+
+I can type:
+
+```
+yes
+```
+if I am connecting to the legitimate GitHub service and have verified the host information where appropriate.
+
+# 16. Successful SSH Authentication
+
+When the SSH connection works correctly, GitHub returns a success message indicating that authentication succeeded.
+
+This means:
+```bash
+My Computer
+     ↓
+Private SSH Key
+     ↓
+GitHub checks Public Key
+     ↓
+Keys Match
+     ↓
+Authentication Successful ✅
+```
+At this point, my computer is successfully authenticated with GitHub.
+
+# 17. SSH Authentication vs Git Authorization
+
+An important concept is that authentication and authorization are related but different.
+
+Authentication asks:
+
+> Who are you? 
+
+Authorization  asks: 
+
+> What are you allowed to do?
+
+SSH proves my identity.
+
+GitHub then determines whether my account has permission to:
+
+- Read a repository
+- Clone a repository
+- Push changes
+- Manage a repository
+
+So:
+
+```
+Authentication = Who are you?
+Authorization  = What can you do?
+```
+# 18. SSH Repository URLs
+
+When using SSH, GitHub repository addresses usually follow this format:
+
+```
+git@github.com:username/repository.git
+```
+For Example: 
+
+```
+git@github.com:digitaltemple07/developer-notes.git
+```
+This tells Git to communicate with GitHub using SSH authentication.
+
+# 19. Checking My Git Remote
+
+I can check the remote repository configured for my project using:
+
+```bash
+git remote -v
+```
+An SSH-configured repository may display:
+
+```
+origin  git@github.com:username/repository.git (fetch)
+origin  git@github.com:username/repository.git (push)
+```
+This tells me that Git is using SSH for the remote connection.
+
+# 20. What Is origin?
+
+When I run:
+
+```bash
+git remote -v
+```
+I may see:
+
+```
+origin
+```
+`origin` is simply the default nickname Git normally gives to the remote repository.
+
+For example:
+
+```
+origin
+   ↓
+git@github.com:digitaltemple07/developer-notes.git
+```
+Instead of repeatedly typing the full repository address, Git can refer to it as:
+
+```
+origin
+```
