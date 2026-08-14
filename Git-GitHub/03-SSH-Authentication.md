@@ -499,3 +499,179 @@ Instead of repeatedly typing the full repository address, Git can refer to it as
 ```
 origin
 ```
+# 21. Local Repository vs Remote Repository
+
+Another concept I learned is the difference between local and remote repositories.
+
+My local repository exists on my computer.
+
+Example:
+
+```
+C:\Users\hp\Documents\developer-notes
+```
+The remote repository exists on GitHub.
+
+Example:
+
+```
+github.com/digitaltemple07/developer-notes
+``` 
+SSH creates the secure authentication mechanism that allows my local Git repository to communicate with the GitHub repository.
+
+```
+LOCAL COMPUTER
+developer-notes
+      │
+      │ SSH
+      ↓
+GITHUB
+developer-notes
+``` 
+# 22. SSH and git push
+
+After configuring SSH, I can push commits using:
+```bash
+git push
+```
+The workflow becomes: 
+```
+Edit files
+    ↓
+git add
+    ↓
+git commit
+    ↓
+git push
+    ↓
+SSH Authentication
+    ↓
+GitHub
+```
+Git handles my code changes.
+
+SSH handles the secure authentication.
+
+# 23. Git and SSH Are Not the Same Thing
+
+This was another important distinction.
+
+Git is:
+
+> A verson control system.
+
+SSH is: 
+
+> A  secure communication and authentication protocol. 
+
+GitHub  is:  
+
+>  An online pltform that hosts Git  repositories.
+
+Therefore:
+
+``` 
+Git
+│
+│ manages versions
+↓
+My Repository
+
+
+SSH
+│
+│ provides secure authentication
+↓
+GitHub
+
+
+GitHub
+│
+│ stores remote repository
+↓
+Internet
+```
+Git can use SSH to communicate securely with GitHub.
+
+# 24. Common SSH Problems
+Problem 1: Permission Denied
+
+A common error is:
+
+```
+Permission denied (publickey)
+```
+This may mean:
+
+- The SSH key was not added to GitHub
+- The wrong key is being used
+- The SSH agent does not know about the key
+- The repository URL is incorrect
+- The GitHub account does not have repository permission
+
+### Problem 2: Wrong Repository URL
+
+If my remote uses HTTPS:
+
+```
+https://github.com/digitaltemple07/repository.git
+```
+then Git is not using the SSH URL.
+
+An SSH remote should look like:
+
+```
+git@github.com:digitaltemple07/repository.git
+```
+### Problem 3: Accidentally Sharing the Private Key
+
+This is a serious security mistake.
+
+I must NEVER publish:
+
+```
+id_ed25519
+```
+Only this file should be copied to GitHub:
+
+```
+id_ed25519.pub
+```
+# 25. SSH Security Best Practices
+
+I should follow these rules:
+
+- Never share my private key
+- Never commit private keys to GitHub
+- Use a passphrase when appropriate
+- Give SSH keys descriptive names
+- Remove old keys from GitHub when a device is no longer used
+- Protect access to my computer
+- Verify commands before running them
+- Keep backups and recovery options secure
+
+# 26. SSH Key Flow
+
+The complete authentication process can be represented like this:
+
+```
+Generate SSH Key Pair
+        ↓
+Private Key created
+        ↓
+Public Key created
+        ↓
+Keep Private Key on Computer
+        ↓
+Copy Public Key
+        ↓
+Add Public Key to GitHub
+        ↓
+Test Connection
+        ↓
+ssh -T git@github.com
+        ↓
+Authentication Successful
+        ↓
+Use Git with GitHub
+```
