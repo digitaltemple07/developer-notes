@@ -675,3 +675,123 @@ Authentication Successful
         ↓
 Use Git with GitHub
 ```
+# 27. Commands I Learned
+| Command | Purpose |
+|---------|---------|
+| `ssh-keygen` | Generate an SSH key |
+| `ls ~/.ssh` | View SSH files |
+| `Get-Content ~/.ssh/id_ed25519.pub` | Display public key in PowerShell | 
+| `ssh -T git@github.com` | Test GitHub SSH authentication | 
+| `git remote -v` | View Git remote addresses |
+| `git push` | Push commits to GitHub | 
+| `git pull` | Download and integrate remote changes | 
+
+# 28. My SSH Cheat Sheet
+
+```bash
+# Check SSH directory
+ls ~/.ssh
+
+# Generate key
+ssh-keygen -t ed25519 -C "email@example.com"
+
+# Display public key
+cat ~/.ssh/id_ed25519.pub
+
+# Test GitHub SSH
+ssh -T git@github.com
+
+# Check Git remote
+git remote -v
+```
+PowerShell version for viewing the public key:
+
+```bash
+Get-Content ~/.ssh/id_ed25519.pub
+```
+# 29. What I Learned
+
+After completing this lesson, I understand that SSH authentication allows my computer and GitHub to communicate securely.
+
+I learned the difference between:
+
+```
+Public Key
+Private Key
+```
+and I understand why protecting the private key is extremely important.
+
+I also learned that Git, GitHub, and SSH perform different jobs.
+
+```
+Git     → Tracks changes
+GitHub  → Hosts repositories
+SSH     → Provides secure authentication
+```
+Together, they create an efficient development workflow.
+
+# 30. How This Connects to My Full-Stack Journey
+
+SSH will become increasingly important as I continue learning software development.
+
+I may eventually use SSH to connect to:
+
+- GitHub
+- Linux servers
+- VPS servers
+- Cloud servers
+- Production applications
+- Development environments
+- Remote computers
+
+Therefore, SSH authentication is not only a GitHub skill.
+
+It is also an important system administration, web development, DevOps, and cybersecurity skill.
+
+# 🧪 Challenge for Myself
+
+Before considering this topic fully understood, I should be able to explain:
+
+ - ▢ What SSH means
+ - ▢ What authentication means
+ - ▢ The difference between public and private keys
+ - ▢ Which key can be shared
+ - ▢ Which key must remain secret
+ - ▢ How to generate an SSH key
+ - ▢ How to add a public key to GitHub
+ - ▢ How to test an SSH connection
+ - ▢ What `git@github.com` means
+ - ▢ What `origin` means
+ - ▢ The difference between Git, GitHub, and SSH
+
+# 🧠 Key Takeaway
+
+> SSH allows my computer to securely prove its identity to GitHub using cryptographic keys.
+
+The rule I should never forget is:
+
+```
+Public Key  → Share
+Private Key → Protect
+```
+# ⏳ Next Topics to Learn
+ - ▢ GitHub Issues
+ - ▢ Editing files
+ - ▢ Git commits
+ - ▢ Git branches
+ - ▢ Pull Requests
+ - ▢ Merge conflicts
+ - ▢ `.gitignore`
+ - ▢ Open-source contribution
+
+## Reflection
+
+Learning SSH authentication helped me understand that pushing code to GitHub involves more than simply typing `git push`.
+
+There is a secure authentication system working behind the scenes that allows GitHub to recognize my computer.
+
+Understanding the relationship between Git, GitHub, SSH, public keys, private keys, local repositories, and remote repositories has given me a stronger understanding of how developers securely work with remote code.
+
+As I continue toward full-stack development, this knowledge will also prepare me for working with Linux servers, VPS environments, deployment, and other remote systems.
+
+**Learn → Practice → Document → Build → Teach.**
