@@ -887,7 +887,7 @@ That makes Issues an important part of professional GitHub and software developm
         ↓
 04-Issues.md
         ↓
-Next: Pull Requests
+Next: 05-editing-files.md
 ```
 
 At this stage, I can now create an Issue, describe the work, use task lists, apply labels, assign responsibility, add comments, track progress, and close the Issue when the work is complete.
