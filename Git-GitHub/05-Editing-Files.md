@@ -31,6 +31,8 @@ git push
 * **`git add`** — stage the changes for the next commit.
 * **`git commit`** — record the changes in Git history.
 * **`git push`** — upload the commits to GitHub.
+* **`git pull`** - Gets changes from the remote repository.
+* **`git log`** - Shows recent commit history.
 
 ## Editing Forked Repositories
 
