@@ -126,6 +126,33 @@ body {
     font-weight: bold;
 }
 
+/* Hamburger */
+
+.menu-toggle {
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    padding: 0;
+
+    cursor: pointer;
+}
+
+
+.menu-toggle span {
+    display: block;
+
+    width: 42px;
+
+    height: 3px;
+
+    background-color: #111;
+
+    margin: 7px 0;
+}
+
 
 /* ========================
    ABOUT
@@ -205,55 +232,31 @@ body {
 
 @media (max-width: 800px) {
 
-    .subscribe-section {
-        flex-direction: column;
+     .navbar {
+        flex-direction: row;
 
-        align-items: flex-start;
+        justify-content: space-between;
 
-        gap: 25px;
-    }
+        align-items: center;
 
-
-    .subscribe-form {
-        width: 100%;
-
-        flex-direction: column;
-    }
-
-
-    .subscribe-form input {
-        width: 100%;
-    }
-
-
-    .navbar {
-        flex-direction: column;
-
-        gap: 20px;
+        padding: 28px 6%;
     }
 
 
     .nav-left,
     .nav-right {
-        flex-wrap: wrap;
-
-        justify-content: center;
-
-        gap: 20px;
+        display: none;
     }
 
+    .brand {
+        font-size: 22px;
 
-    .about-content {
-        flex-direction: column;
-
-        gap: 40px;
+        font-weight: 600;
     }
 
-
-    .about-image img {
-        width: 100%;
-
-        height: auto;
+    
+ .menu-toggle {
+        display: block;
     }
 
 }
