@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #111;
+
+    background-color: #f4eee8;
+}
+
+
+/* ========================
+   SUBSCRIBE
+======================== */
+
+.subscribe-section {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 30px 5%;
+}
+
+
+.subscribe-text h2 {
+    margin: 0 0 10px;
+
+    font-size: 32px;
+}
+
+
+.subscribe-text p {
+    margin: 0;
+
+    font-size: 18px;
+}
+
+
+.subscribe-form {
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.subscribe-form input {
+    width: 300px;
+
+    padding: 18px;
+
+    border: 1px solid #333;
+
+    font-size: 16px;
+}
+
+
+.subscribe-form button {
+    padding: 18px 30px;
+
+    border: none;
+
+    background-color: #3165df;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* ========================
+   NAVIGATION
+======================== */
+
+.navbar {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 8%;
+
+    background-color: white;
+}
+
+
+.nav-left,
+.nav-right {
+    display: flex;
+
+    gap: 35px;
+}
+
+
+.navbar a {
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 18px;
+}
+
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
+.navbar .active {
+    text-decoration: underline;
+}
+
+
+.brand {
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+
+/* ========================
+   ABOUT
+======================== */
+
+.about-section {
+    padding: 80px 5%;
+}
+
+
+.about-content {
+    max-width: 1500px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 100px;
+}
+
+
+.about-text {
+    flex: 1;
+}
+
+
+.about-text h1 {
+    margin-top: 0;
+
+    margin-bottom: 55px;
+
+    font-size: 34px;
+}
+
+
+.about-text h2 {
+    margin-top: 40px;
+
+    font-size: 25px;
+}
+
+
+.about-text p {
+    margin-bottom: 25px;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+}
+
+
+.about-image {
+    flex: 1;
+}
+
+
+.about-image img {
+    display: block;
+
+    width: 100%;
+
+    max-width: 600px;
+
+    height: 520px;
+
+    object-fit: cover;
+}
+
+
+/* ========================
+   MOBILE DESIGN
+======================== */
+
+@media (max-width: 800px) {
+
+    .subscribe-section {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+
+    .subscribe-form {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+
+    .subscribe-form input {
+        width: 100%;
+    }
+
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .nav-left,
+    .nav-right {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+
+    .about-content {
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+
+    .about-image img {
+        width: 100%;
+
+        height: auto;
+    }
+
+}
