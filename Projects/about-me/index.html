@@ -1,125 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Imafe Kennedy</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Newsletter Section -->
     <section class="subscribe-section">
+      <div class="subscribe-text">
+        <h2>Subscribe</h2>
 
-        <div class="subscribe-text">
-            <h2>Subscribe</h2>
+        <p>Enter your email below for the newsletter.</p>
+      </div>
 
-            <p>Enter your email below for the newsletter.</p>
-        </div>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Email Address" />
 
-        <form class="subscribe-form">
-            <input
-                type="email"
-                placeholder="Email Address"
-            >
-
-            <button type="submit">SIGN UP</button>
-        </form>
-
+        <button type="submit">SIGN UP</button>
+      </form>
     </section>
-
 
     <!-- Navigation -->
     <nav class="navbar">
+      <div class="nav-left">
+        <a href="#">Home</a>
+        <a href="#" class="active">About</a>
+        <a href="#">Projects</a>
+      </div>
 
-        <div class="nav-left">
-            <a href="#">Home</a>
-            <a href="#" class="active">About</a>
-            <a href="#">Projects</a>
-        </div>
+      <div class="brand">Imafe Kennedy Oisamoren</div>
 
-
-        <div class="brand">
-            Imafe Kennedy Oisamoren
-        </div>
-
-         <!-- Hamburger Menu -->
-    <button class="menu-toggle" aria-label="Open navigation menu">
+      <!-- Hamburger Menu -->
+      <button class="menu-toggle" aria-label="Open navigation menu">
         <span></span>
         <span></span>
         <span></span>
-    </button>
+      </button>
 
-        <div class="nav-right">
-            <a href="#">Learning</a>
-            <a href="https://github.com/digitaltemple07">
-                GitHub
-            </a>
-            <a href="#">Connect</a>
-        </div>
-
+      <div class="nav-right">
+        <a href="#">Learning</a>
+        <a href="https://github.com/digitaltemple07"> GitHub </a>
+        <a href="#">Connect</a>
+      </div>
     </nav>
 
-       <!-- Main About Section -->
+    <!-- Main About Section -->
     <main class="about-section">
+      <div class="about-content">
+        <!-- Left Side -->
+        <div class="about-text">
+          <h1>ABOUT KEN</h1>
 
-        <div class="about-content">
+          <p>
+            Hey, I'm Ken. I'm a web designer and aspiring full-stack developer
+            who enjoys understanding how websites and web applications work.
+          </p>
 
-            <!-- Left Side -->
-            <div class="about-text">
+          <p>
+            I am Imafe Kennedy Oisamore, a founder, creator, and strategic
+            entrepreneur. I am a lifelong learner who enjoys building products
+            that solve real-world problems.
+          </p>
 
-                <h1>ABOUT KEN</h1>
+          <p>
+            I'm passionate about combining technology, business and education to
+            create useful experiences that help people and businesses grow.
+          </p>
 
-                <p>
-                    Hey, I'm Ken. I'm a web designer and aspiring
-                    full-stack developer who enjoys understanding
-                    how websites and web applications work.
-                </p>
+          <h2>What I'm Learning</h2>
 
-                <p>
-                    I am Imafe Kennedy Oisamore, a founder, creator,
-                    and strategic entrepreneur. I am a lifelong learner
-                    who enjoys building products that solve real-world
-                    problems.
-                </p>
+          <p>
+            I'm currently strengthening my knowledge of HTML, CSS and
+            JavaScript. I'm also learning Git and GitHub.
+          </p>
 
-                <p>
-                    I'm passionate about combining technology,
-                    business and education to create useful experiences
-                    that help people and businesses grow.
-                </p>
+          <h2>My Goal</h2>
 
-
-                <h2>What I'm Learning</h2>
-
-                <p>
-                    I'm currently strengthening my knowledge of
-                    HTML, CSS and JavaScript. I'm also learning
-                    Git and GitHub.
-                </p>
-
-
-                <h2>My Goal</h2>
-
-                <p>
-                    My goal is to become a full-stack web developer
-                    and continue building useful digital products.
-                </p>
-
-            </div>
-
-
-            <!-- Right Side -->
-            <div class="about-image">
-
-                <img
-                    src="../../../Assets/images/ken.png"
-                    alt="Portrait of Ken"
-                >
-
-            </div>
-
+          <p>
+            My goal is to become a full-stack web developer and continue
+            building useful digital products.
+          </p>
         </div>
 
+        <!-- Right Side -->
+        <div class="about-image">
+          <img src="../../../Assets/images/ken.png" alt="Portrait of Ken" />
+        </div>
+      </div>
     </main>
+
+    <!-- SUBSCRIBE SECTION -->
+
+    <section class="footer-subscribe">
+      <div class="footer-subscribe-text">
+        <h2>Subscribe</h2>
+        <p>Enter your email below for the newsletter.</p>
+      </div>
+
+      <form class="footer-subscribe-form">
+        <input type="email" placeholder="Email Address" />
+        <button type="submit">SIGN UP</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer-left">
+        <h2>Imafe Kennedy Oisamoren</h2>
+
+        <div class="social-links">
+          <a href="#" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="#" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <a class="footer-email" href="mailto:ddigitaltemple@gmail.com">
+          ddigitaltemple@gmail.com
+        </a>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <a href="#">HOME</a>
+          <a href="#">ABOUT</a>
+          <a href="#">PROJECTS</a>
+        </div>
+
+        <div>
+          <a href="#">LEARNING</a>
+          <a href="#">GITHUB</a>
+          <a href="#">CONNECT</a>
+        </div>
+      </div>
+
+      <p class="copyright">© 2026</p>
+    </footer>
+  </body>
+</html>
