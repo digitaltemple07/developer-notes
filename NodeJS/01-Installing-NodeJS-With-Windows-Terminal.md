@@ -649,14 +649,14 @@ PowerShell then checks other scopes or falls back to its applicable default beha
 
 ### Execution Policy Comparison
 
-| Policy | Basic Meaning | Typical Behavior |
-|---|---|---|
-| `Restricted` | Scripts blocked | `.ps1` scripts cannot normally run |
-| `RemoteSigned` | Local scripts allowed | Downloaded scripts receive additional checks |
-| `AllSigned` | Signed scripts only | Scripts generally require trusted signatures |
-| `Unrestricted` | Most scripts allowed | Internet scripts may generate warnings |
-| `Bypass` | Policy checks bypassed | No normal Execution Policy blocking |
-| `Undefined` | Nothing configured | PowerShell checks another scope/default |
+| Policy         | Basic Meaning          | Typical Behavior                             |
+| -------------- | ---------------------- | -------------------------------------------- |
+| `Restricted`   | Scripts blocked        | `.ps1` scripts cannot normally run           |
+| `RemoteSigned` | Local scripts allowed  | Downloaded scripts receive additional checks |
+| `AllSigned`    | Signed scripts only    | Scripts generally require trusted signatures |
+| `Unrestricted` | Most scripts allowed   | Internet scripts may generate warnings       |
+| `Bypass`       | Policy checks bypassed | No normal Execution Policy blocking          |
+| `Undefined`    | Nothing configured     | PowerShell checks another scope/default      |
 
 For this Node.js development environment, the chosen policy was:
 
