@@ -1,5 +1,3 @@
----
-
 # 51. Building a Homepage From a Reference
 
 I started building a simple homepage by using a reference design and recreating its layout with HTML and CSS.
