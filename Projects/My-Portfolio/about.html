@@ -22,8 +22,15 @@
         <p>Enter your email below to receive our weekly newsletter</p>
       </div>
 
-      <form class="subscribe-form">
-        <input type="email" placeholder="Email Address" required />
+      <form
+        class="subscribe-form"
+        name="newsletter"
+        method="POST"
+        data-netlify="true"
+      >
+        <input type="hidden" name="form-name" value="newsletter" />
+
+        <input type="email" name="email" placeholder="Email Address" required />
 
         <button type="submit">SIGN UP</button>
       </form>
