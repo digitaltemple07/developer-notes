@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Imafe Kennedy</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
 
     <link
       rel="stylesheet"
@@ -13,16 +14,16 @@
   </head>
 
   <body>
-    <!-- Newsletter Section -->
-    <section class="subscribe-section">
+    <!-- SUBSCRIBE SECTION -->
+
+    <section class="subscribe">
       <div class="subscribe-text">
         <h2>Subscribe</h2>
-
-        <p>Enter your email below for the newsletter.</p>
+        <p>Enter your email below to receive our weekly newsletter</p>
       </div>
 
       <form class="subscribe-form">
-        <input type="email" placeholder="Email Address" />
+        <input type="email" placeholder="Email Address" required />
 
         <button type="submit">SIGN UP</button>
       </form>
@@ -31,12 +32,31 @@
     <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-left">
-        <a href="#">Home</a>
-        <a href="project/about.html" class="active">About</a>
-        <a href="#">Projects</a>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="projects.html">Projects</a>
       </div>
 
-      <div class="brand">Imafe Kennedy Oisamoren</div>
+      <div class="logo">Imafe Kennedy Oisamoren</div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+          <div class="mobile-menu-name">Imafe Kennedy Oisamoren</div>
+
+          <button class="menu-close" id="menuClose" aria-label="Close menu">
+            ×
+          </button>
+        </div>
+
+        <nav class="mobile-menu-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="#">Podcast</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Speaking</a>
+          <a href="#">Connect</a>
+        </nav>
+      </div>
 
       <!-- Hamburger Menu -->
       <button class="menu-toggle" aria-label="Open navigation menu">
@@ -73,7 +93,7 @@
             <em
               >Neo Black Consciousness Movement is an Africa Educational and
               Civic Movement. Dedicated in promoting historical understanding,
-              critical thinking, ethical leadership, Good Govvernance, Human
+              critical thinking, ethical leadership, Good Governance, Human
               Right and responsible citizenship across Africa and Africa
               diaspora</em
             >.
@@ -118,7 +138,7 @@
       </div>
     </main>
 
-    <!-- SUBSCRIBE SECTION -->
+    <!-- FOOTER SUBSCRIBE SECTION -->
 
     <section class="footer-subscribe">
       <div class="footer-subscribe-text">
@@ -176,5 +196,8 @@
 
       <p class="copyright">© 2026</p>
     </footer>
+
+    <script src="js/about.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

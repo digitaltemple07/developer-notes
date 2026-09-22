@@ -6,7 +6,9 @@
 
     <title>Imafe Kennedy Oisamoren</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -30,27 +32,48 @@
     </section>
 
     <!-- NAVIGATION -->
-    <header>
-      <nav class="navbar">
-        <div class="nav-left">
-          <a href="#" class="active">Home</a>
+
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+      </div>
+
+      <div class="logo">Imafe Kennedy Oisamoren</div>
+
+      <div class="nav-right">
+        <a href="#">Newsletter</a>
+        <a href="#">Lessons</a>
+        <a href="#">Connect</a>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+          <div class="mobile-menu-name">Imafe Kennedy Oisamoren</div>
+
+          <button class="menu-close" id="menuClose" aria-label="Close menu">
+            ×
+          </button>
+        </div>
+
+        <nav class="mobile-menu-links">
+          <a href="index.html">Home</a>
           <a href="about.html">About</a>
-          <a href="#">Projects</a>
-        </div>
-
-        <div class="logo">Imafe Kennedy Oisamoren</div>
-
-        <div class="nav-right">
+          <a href="#">Podcast</a>
           <a href="#">Newsletter</a>
-          <a href="#">Lessons</a>
+          <a href="#">Speaking</a>
           <a href="#">Connect</a>
-        </div>
+        </nav>
+      </div>
 
-        <button class="menu-toggle" aria-label="Open navigation menu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </nav>
-    </header>
+      <!-- Hamburger Menu -->
+      <button class="menu-toggle" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
 
     <!-- HERO -->
     <main>
@@ -78,57 +101,66 @@
       </section>
     </main>
 
-    <!-- SUBSCRIBE SECTION -->
+    <!-- FOOTER SUBSCRIBE SECTION -->
 
-    <section class="subscribe">
-      <div class="subscribe-text">
+    <section class="footer-subscribe">
+      <div class="footer-subscribe-text">
         <h2>Subscribe</h2>
-        <p>To receive our weekly newsletter</p>
+        <p>Enter your email below for the newsletter.</p>
       </div>
 
-      <form class="subscribe-form">
-        <input type="email" placeholder="Email Address" required />
-
+      <form class="footer-subscribe-form">
+        <input type="email" placeholder="Email Address" />
         <button type="submit">SIGN UP</button>
       </form>
     </section>
 
     <!-- FOOTER -->
+
     <footer class="footer">
       <div class="footer-left">
         <h2>Imafe Kennedy Oisamoren</h2>
 
-        <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
+        <div class="social-links">
+          <a href="#" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
 
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="#" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
         <a class="footer-email" href="mailto:ddigitaltemple@gmail.com">
           ddigitaltemple@gmail.com
         </a>
-
-        <p class="copyright">© 2026</p>
       </div>
 
-      <!-- RIGHT SIDE -->
-
       <div class="footer-links">
-        <div class="footer-column">
+        <div>
           <a href="#">HOME</a>
           <a href="#">ABOUT</a>
           <a href="#">PROJECTS</a>
         </div>
 
-        <div class="footer-column">
-          <a href="#">NEWSLETTER</a>
-          <a href="#">LESSONS</a>
+        <div>
+          <a href="#">LEARNING HUB</a>
+          <a href="#">GITHUB</a>
           <a href="#">CONNECT</a>
         </div>
       </div>
+
+      <p class="copyright">© 2026</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

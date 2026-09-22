@@ -1,0 +1,99 @@
+/* ========================================
+   BASIC RESET
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero {
+  min-height: 600px;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  background-image: url("../../../Assets/images/hero-picture.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.hero-content {
+  width: 100%;
+
+  padding: 0 9% 50px;
+
+  position: relative;
+  z-index: 1;
+}
+
+/* HERO NAME */
+
+.hero-content > h1 {
+  font-size: 30px;
+  font-weight: 650;
+
+  margin-bottom: 60px;
+}
+
+/* STATISTICS */
+
+.statistics {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 40px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+  padding-top: 45px;
+}
+
+/* STATISTIC NUMBERS */
+
+.stat h2 {
+  font-size: 55px;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+/* STATISTIC TEXT */
+
+.stat p {
+  font-size: 15px;
+  line-height: 1.4;
+}
