@@ -617,9 +617,9 @@
 
   .mobile-menu-header {
     position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
+    top: 16%;
+    left: 6%;
+    width: 88%;
     height: 80px;
     display: flex;
     align-items: center;
