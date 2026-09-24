@@ -23,7 +23,7 @@ body {
 
   aspect-ratio: 16 / 9;
 
-  background-image: url("../../../Assets/images/hero-picture.png");
+  background-image: url("../Assets/images/hero-picture.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
