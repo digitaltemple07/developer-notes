@@ -635,8 +635,8 @@
     left: 7.5%;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
     white-space: nowrap;
   }
 
@@ -654,7 +654,7 @@
     padding: 0;
 
     font-size: 42px;
-    font-weight: 300;
+    font-weight: 100;
 
     line-height: 1;
 
