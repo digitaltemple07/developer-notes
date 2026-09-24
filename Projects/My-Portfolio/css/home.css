@@ -23,7 +23,7 @@ body {
 
   aspect-ratio: 16 / 9;
 
-  background-image: url("../Assets/images/hero-picture.png");
+  background-image: url("../../Assets/images/hero-picture.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -94,6 +94,19 @@ body {
 /* STATISTIC TEXT */
 
 .stat p {
-  font-size: 15px;
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* /* ========================
+   MOBILE RESPONSIVENESS 
+======================== */
+
+@media (max-width: 800px) {
+  .statistics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 35px;
+    row-gap: 45px;
+  }
 }
