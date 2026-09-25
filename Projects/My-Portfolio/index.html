@@ -28,6 +28,7 @@
         class="subscribe-form"
         name="newsletter"
         method="POST"
+        action="/thank-you.html"
         data-netlify="true"
       >
         <input type="hidden" name="form-name" value="newsletter" />
@@ -116,8 +117,15 @@
         <p>Enter your email below for the newsletter.</p>
       </div>
 
-      <form class="footer-subscribe-form">
-        <input type="email" placeholder="Email Address" />
+      <form
+        class="footer-subscribe-form"
+        name="newsletter-footer"
+        method="POST"
+        action="/thank-you.html"
+        data-netlify="true"
+      >
+        <input type="email" name="email" placeholder="Email Address" required />
+
         <button type="submit">SIGN UP</button>
       </form>
     </section>
