@@ -64,8 +64,8 @@ body {
   flex: 1;
 
   display: flex;
-  justify-content: top;
-  align-items: top;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-image img {
