@@ -67,8 +67,8 @@ body {
 
   margin-bottom: 30px;
 
-  filter: brightness(0);
-  opacity: 50%;
+  /* filter: brightness(0);
+  opacity: 80%; */
 
   text-align: center;
 }
