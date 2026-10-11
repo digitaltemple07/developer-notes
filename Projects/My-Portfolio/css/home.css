@@ -61,11 +61,16 @@ body {
 
 /* HERO NAME */
 
-.hero-content > h1 {
-  font-size: 30px;
-  font-weight: 650;
+.hero-content h1 {
+  font-size: 20px;
+  font-weight: 500;
 
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+
+  filter: brightness(0);
+  opacity: 50%;
+
+  text-align: center;
 }
 
 /* STATISTICS */
